@@ -16,5 +16,16 @@ elif a==3:
 else:
     print("Błąd")
     
+    
+    
+    import random
+
+max_value = int(input("podaj największą możliwą liczbę:"))
+rolls = int(input("ile losowań?:"))
+
+number_available = list(range(1, max_value + 1))
+rolled_numbers = random.sample(number_available, rolls)
+print(sorted(rolled_numbers))
+    
 
 
